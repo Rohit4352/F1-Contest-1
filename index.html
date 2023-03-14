@@ -5,49 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Title</title>
+    
 </head>
-<body>
-    <header>
-        <h1>Welcome to my website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li> 
-                <li><a href="#">Contact</a></li>
+<body style="background-color:rgb(239, 233, 226)">
+    <header style="display: flex; align-items: center; flex-direction: row; background-image: linear-gradient(to right, rgba(209, 217, 217, 0.7),rgba(11, 202, 202, 0.7));">
+        <a href="index.html" style="width: 10%;"><img src="logo.png" width="100px"></a>
+        <h1 style="text-align: center; width: 90%;">Welcome to my website</h1>
+        <nav style="flex: 1; text-align: right;">
+            <ul style=" display: inline-block;position: relative; text-decoration: none;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#aboutme">About</a></li> 
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
 
-        <section>
+        <div style="border: 10ch;">
+        <section id="Aboutme">
             <h2>About Me</h2>
-            <p>Hi, I'm Rohit! Graduated in 2022 I am a web developer based on gurugram, India.</p>
+            <p>Hi, I'm Rohit! Graduated in 2022 I am a web developer based on gurugram, India.<br>
+                Creating and maintaining user-friendly, interactive and optimized websites using efficient and well-structured codes.<br>
+    <pre>
+    Hands-on skills:
+        HTML, CSS, JS
+        Python and SQL 
+        Java
+    </pre>
+                Worked as a .NET core Developer and used Microsoft SQL server for database management.<br>
+                Apt solid for learning collaborative skills. I am passionate about applied mathematics. Good time management skills and also has experience working on team projects.</p>
         </section>
         
-        <section>
+        <section id="Project">
             <h2>My Work</h2>
             <ol>
-                <li><a href="#">Autonomous Car</a></li>
+                <li><a href="#">Autonomous Car Simulation</a></li>
                 <li><a href="#">Attendance page</a></li>
-                <li><a href="#">PSPN System</a></li>
+                <li><a href="#">Quiz & puzzle </a></li>
             </ol>
         </section>
 
-        <section>
+        <section id="Testimonials">
             <h2>Testimonials</h2>
             <blockquote>
-                "John did an amazing job designing my website. I couldn't be happier with the results!" <br>
+                "Rohit did an amazing job designing my website. I couldn't be happier with the results!" <br>
                 - Jane Smith, CEO<br>
-                "Working with John was a great experience. He is a true professional."<br>
+                "Working with Rohit was a great experience. He is a true professional."<br>
                 - Mark Johnson, Marketing Manager<br>
             </blockquote>
         </section>
-
+        </div>
         <section>
             <h2>Pricing</h2>
             <ul>
-                <li><h3>Basic Plan</h3></li>
+                <li style="flex: 0;"><h3>Basic Plan</h3></li>
                 <p>&dollar;99/month</p>
                 <ul>
                     <li>5 pages</li>
@@ -56,7 +68,7 @@
                 </ul>
                 <br><button>Sign Up</button>
                 
-                <li><h3>Advanced Plan</h3></li>
+                <li style="flex: 1;"><h3>Advanced Plan</h3></li>
                 <p>&dollar;199/month</p>
                 <ul>
                     <li>10 pages</li>
@@ -81,7 +93,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="contact">
         &copy; 2023 Rohit Gupta 
     </footer>
 </body>
